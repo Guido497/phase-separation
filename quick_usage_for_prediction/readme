@@ -1,1 +1,15 @@
+# In this directory you can find 3 workbooks that are required for creating a proteome input file
+# and perform training of a random forest model with 10x cross validation. 
 
+Workbook 1: This requires as input a fasta file for the proteome of interest, downloaded from UniProt. Ideally this is the human
+proteome, as for human the most proteins are known that are able to undergo phase separation in vitro and in vivo. 
+While originally intended to study phase separation, this approach can in principle be adapted to any specific class of proteins
+of interest that can be sufficiently distinguished from other proteins based on the aminoacid content. 
+
+Workbook 2: This workbook uses the .pkl file saved in Workbook 1. 
+Here the 'labels' are added for the group of proteins that provide the training group (i.e. the positive controls). 
+
+Workbook 3: This workbook uses the .pkl file saved in Workbook 2. First as random forest model is trained and eveluated using ROC and PRC metrics. Next, 
+you can read in a second proteome file (here read in to 'second_df'). This second proteome can be any fasta file of any
+number of proteins, as long as it has been processed as well through workbook 1 and 2. Note that for this second proteome
+file you should still add the labels in workbook 2, but this has no effect on the predictions. 
