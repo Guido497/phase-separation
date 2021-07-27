@@ -1,8 +1,6 @@
 # phase-separation
 
-Find here the code associated with the PSAP classifier. Currently the code contains several paths which will have to be adapted for each user.
-In addition, an output folder will have to be specified where the input file for the downstream processing
-and machine learning is located. Here it is specified as df.to_pickle('out\\human_llps.pkl'). 
+Find here the code associated with the PSAP classifier and some of the figures in te manuscript.
 
-In the near future the PSAP classifier will be updated into a command line tool. More information on this can be found
-on this page soon!
+If you are interested in performing training on a dataset and predicting your own sequences, go to the folder 
+'quick_usage_for_prediction' in which you find the required workbooks and instructions as to how to do this. 
