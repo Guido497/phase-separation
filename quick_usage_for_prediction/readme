@@ -9,7 +9,7 @@ of interest that can be sufficiently distinguished from other proteins based on 
 Workbook 2: This workbook uses the .pkl file saved in Workbook 1. 
 Here the 'labels' are added for the group of proteins that provide the training group (i.e. the positive controls). 
 
-Workbook 3: This workbook uses the .pkl file saved in Workbook 2. First as random forest model is trained and eveluated using ROC and PRC metrics. Next, 
+Workbook 3: This workbook uses the .pkl file saved in Workbook 2. First a random forest model is trained and eveluated using ROC and PRC metrics. Next, 
 you can read in a second proteome file (here read in to 'second_df'). This second proteome can be any fasta file of any
 number of proteins, as long as it has been processed as well through workbook 1 and 2. Note that for this second proteome
 file you should still add the labels in workbook 2, but this has no effect on the predictions. 
