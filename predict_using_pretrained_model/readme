@@ -1,1 +1,15 @@
+In this folder you can find:
+- a Jupyter Notebook that has all the code in there required to predict your sequences of interest
+- A file called 'finalized_RF.sav' which is the Random Forest model pretrained on the human proteome
+- a file called 'RF_original_input_data.pbz2' which contains the original dataframe for the human proteome used to train the RF model
 
+To start predicting your own sequences you should:
+ 1) download the 'finalized_RF.sav' and the 'RF_original_input_data.pbz2' file
+ 2) Place these in a directory where you can load them into the Jupyter Notebook
+ 3) Prepare a list of sequences that you want to have predicted in fasta format (for example tr|proteinID|name) and 
+    save these in a directory in fasta (.fa) format. 
+ 4) Go through the workbook by executing one cell by another from top to bottom. It will also clearly state when and where you should load which file
+ 5) Output the predictions as a .csv file. The final csv will have 216 prediction column, which you can just average to get the final
+    'phase separation likelihood score'. 
+    
+If something is not working, don't hesitate to contact me at guido.vanmierlo@epfl.ch. 
